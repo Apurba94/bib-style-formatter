@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bib-style-formatter"
+version = "0.1.0"
+description = "Render BibTeX entries as APA, IEEE, Vancouver or Harvard plain-text references."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+bib-style-formatter = "bib_style_formatter.cli:main"
+
+[tool.setuptools]
+packages = ["bib_style_formatter"]
